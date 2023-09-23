@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.root{
+    height: 150px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans';
+    color: crimson;
+    text-transform: uppercase;
+}
+
+
+
+
+.demo-section{
+    display: flex;
+}
+
+.div{
+    width: 50%;
+}
+.div img{
+    width: 100%;
+}
+
+
+
+
+/*=============================== Responsive Part====================*/
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .root{
+        background-color: rgb(35, 143, 103);
+    }
+    h1{
+        font-size: 40px;
+        font-family: 'Arial';
+        color: rgb(57, 43, 178);
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .root{
+        background-color: rgb(44, 83, 55);
+        height: 90px;
+    }
+    h1{
+        font-size: 35px;
+        font-family: 'Arial';
+        color: rgb(178, 43, 164);
+    }
+    .demo-section{
+        flex-direction: column;
+    }
+    .div{
+        width: 100%;
+    }
+    
+}
